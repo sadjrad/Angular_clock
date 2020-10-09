@@ -1,0 +1,9 @@
+<h2 class="h2 text-center text-warning">Digital Clock </h2>
+<div id="clock" class="justify-content-center">
+  <p class="unit" id="hours">{{h}}</p>
+  <p class="unit" id="minutes">{{m}}</p>
+  <p class="unit" id="seconds">{{s}}</p>
+  <p class="unit" id="ampm">{{diem}}</p>
+</div>
+<div style="margin-top:5%" *ngIf="!this.clockService.updateState"><button type="button" class=" btn btn-primary btn-lg" (click)="onUpdateTime()">Add 2 hours</button></div>
+
